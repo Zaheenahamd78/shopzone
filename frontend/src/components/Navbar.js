@@ -13,11 +13,12 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center shadow-md">
       <Link to="/" className="text-2xl font-bold">
-        🛒 ShopZone
+        ShopZone
       </Link>
       <div className="flex gap-4 items-center">
         <Link to="/products" className="hover:underline">Products</Link>
-        <Link to="/cart" className="hover:underline">🛒 Cart</Link>
+        <Link to="/orders" className="hover:underline">My Orders</Link>
+        <Link to="/cart" className="hover:underline">Cart</Link>
         {token ? (
           <button
             onClick={handleLogout}
@@ -38,4 +39,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;s
