@@ -1,7 +1,7 @@
-const User = require("../model/User");
+const User = require("../model/User");  // ← Yahan change karo (models → model)
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { sendWelcomeEmail } = require('../config/email');  // 🆕 LINE 1 - ADD THIS
+const { sendWelcomeEmail } = require('../config/email');
 
 // Register
 const register = async (req, res) => {
@@ -21,7 +21,7 @@ const register = async (req, res) => {
       password: hashedPassword,
     });
 
-    // 🆕 LINE 2 - ADD THIS (Send Welcome Email)
+    // Send Welcome Email
     await sendWelcomeEmail(user.email, user.name);
 
     const token = jwt.sign(
