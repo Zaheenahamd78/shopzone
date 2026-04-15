@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Review = require('../model/Review');
-const Product = require('../model/product');  // ✅ Fixed: Product → product (small p)
+const Product = require('../model/product'); // ✅ Ye line IMPORTANT hai (small 'p')
 const { protect } = require('../middleware/auth');
 
 // Get reviews for a product
