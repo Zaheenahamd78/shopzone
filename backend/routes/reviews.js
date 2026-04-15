@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Review = require('../model/Review');
-const Product = require('../model/Product');
+const Product = require('../model/product');
 const { protect } = require('../middleware/auth');
 
 // Get reviews for a product
