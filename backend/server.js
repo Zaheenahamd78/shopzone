@@ -15,7 +15,7 @@ const wishlistRoutes = require("./routes/wishlist");
 const couponRoutes = require("./routes/coupons");
 const adminRoutes = require("./routes/admin");  // 🆕 ADMIN ROUTES
 const { apiLimiter } = require("./middleware/rateLimiter");
-const { connectRedis } = require("./config/redis");
+const { connectRedis } = require("./config/Redis");
 const logger = require("./config/logger");
 
 dotenv.config();
